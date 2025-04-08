@@ -18,6 +18,7 @@
         <section>
             <div class="container catalog">
                 <div class="catalog__filter">
+                  <h3>Фильтры</h3>
                     <div class="price-filter">
                         <label class="price-filter__label">Цена</label>
                         
@@ -79,7 +80,7 @@
                           border: 1px solid #ddd;
                           border-radius: 41px;
                           padding-left: 12px;
-                          padding-right: 12px;
+                          /* padding-right: 12px; */
                           background: white;
                           min-width: 68px;
                           height: 23px;
@@ -192,6 +193,70 @@
                         // Инициализация
                         updateSlider();
                       </script>
+                    <div class="filter-section">
+                      <label class="price-filter__label">Производители</label>
+                      <div class="filter-brand">
+                        <div class="filter-brand__item">
+                          <input class="filter-brand__checkbox" type="checkbox" name="brand_samsung" id="brand_samsung">
+                          <label class="filter-brand__checkbox" for="brand_samsung" tabindex="0" id="brand_samsung_label" aria-label="бренд samsung" role="checkbox" aria-checked="false">Samsung</label>
+                        </div>
+                        <div class="filter-brand__item">
+                          <input class="filter-brand__checkbox" type="checkbox" name="brand_sony" id="brand_sony">
+                          <label class="filter-brand__checkbox" for="brand_sony" tabindex="0" id="brand_sony_label" aria-label="бренд sony" role="checkbox" aria-checked="false">Sony</label>
+                        </div>
+                        <div class="filter-brand__item">
+                          <input class="filter-brand__checkbox" type="checkbox" name="brand_apple" id="brand_apple">
+                          <label class="filter-brand__checkbox" for="brand_apple" tabindex="0" id="brand_apple_label" aria-label="бренд apple" role="checkbox" aria-checked="false">Apple</label>
+                        </div>
+                        <div class="filter-brand__item">
+                          <input class="filter-brand__checkbox" type="checkbox" name="brand_lg" id="brand_lg">
+                          <label class="filter-brand__checkbox" for="brand_lg" tabindex="0" id="brand_lg_label" aria-label="бренд LG" role="checkbox" aria-checked="false">LG</label>
+                        </div>
+                      </div>
+                      <p class="all_filters">Смотреть все   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path d="M2.91675 12.7038C4.36531 11.2615 7.26243 8.06216 7.26243 6.80341C7.26243 5.54466 4.36531 2.60758 2.91675 1.29639" stroke="#656565" stroke-width="0.875" stroke-linecap="round"/>
+                        <path d="M6.17639 13.4167C7.62495 11.7941 10.5221 8.19491 10.5221 6.77882C10.5221 5.36273 7.62495 2.05851 6.17639 0.583416" stroke="#656565" stroke-width="0.875" stroke-linecap="round"/>
+                      </svg></p>
+                      
+                    </div> 
+                    <div class="filter-section">
+                      <label class="price-filter__label">Сроки доставки</label>
+                      <div class="filter-brand">
+                        <div class="filter-brand__item">
+                          <input class="filter-brand__checkbox" type="checkbox" name="brand_1" id="brand_1">
+                          <label class="filter-brand__checkbox" for="brand_1" tabindex="0" id="brand_1_label" aria-label="бренд 1" role="checkbox" aria-checked="false">Неважно</label>
+                        </div>
+                        <div class="filter-brand__item">
+                          <input class="filter-brand__checkbox" type="checkbox" name="brand_2" id="brand_2">
+                          <label class="filter-brand__checkbox" for="brand_2" tabindex="0" id="brand_2_label" aria-label="бренд 2" role="checkbox" aria-checked="false">Завтра</label>
+                        </div>
+                        <div class="filter-brand__item">
+                          <input class="filter-brand__checkbox" type="checkbox" name="brand_3" id="brand_3">
+                          <label class="filter-brand__checkbox" for="brand_3" tabindex="0" id="brand_3_label" aria-label="бренд 3" role="checkbox" aria-checked="false">До 3 дней</label>
+                        </div>
+                        <div class="filter-brand__item">
+                          <input class="filter-brand__checkbox" type="checkbox" name="brand_4" id="brand_4">
+                          <label class="filter-brand__checkbox" for="brand_4" tabindex="0" id="brand_4_label" aria-label="бренд 4" role="checkbox" aria-checked="false">До 7 дней</label>
+                        </div>
+                      </div>
+
+                    </div> 
+                    <div class="filter-section"> 
+                      <div class="filter-brand">
+                        <div class="filter-brand__item">
+                          <input class="filter-brand__checkbox" type="checkbox" name="brand_apple" id="brand_apple">
+                          <label class="filter-brand__checkbox" for="brand_apple" tabindex="0" id="brand_apple_label" aria-label="бренд apple" role="checkbox" aria-checked="false">Есть в наличии</label>
+                        </div>
+                        <div class="filter-brand__item">
+                          <input class="filter-brand__checkbox" type="checkbox" name="brand_lg" id="brand_lg">
+                          <label class="filter-brand__checkbox" for="brand_lg" tabindex="0" id="brand_lg_label" aria-label="бренд LG" role="checkbox" aria-checked="false">Рейтинг 4 и выше</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog__filter__button">
+                    <button class="catalog__filter__button__filter">Применить фильтры</button>
+                    <button class="catalog__filter__button__clear">Очистить</button>
+                    </div>
                 </div>
                 <div class="catalog__content">
                     <div class="catalog__sort">
