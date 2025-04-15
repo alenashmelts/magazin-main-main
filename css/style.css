@@ -31,7 +31,7 @@ html {
 
 header,
 footer {
-    background-color: grey;
+    background-color: rgb(255, 255, 255);
     min-height: 100px;
 }
 
@@ -74,6 +74,101 @@ gap: 20px var(--Surface-border-radius---radius-s-lg, 16px);
 align-self: stretch;
 flex-wrap: wrap;
 }
+
+
+h2 {
+    font-size: 24px;
+    /* margin-bottom: 20px; */
+}
+
+h1{
+    font-size: 32px;
+}
+
+
+/*----------------------шапка-----------------------*/
+
+.container-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.breadcrumb-list {
+    font-size: 16px;
+}
+
+
+.header-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 164.5px;
+}
+
+
+
+/*каталог и лого*/
+.header-search_logo-catalog{
+    display: flex;
+align-items: center;
+gap: 19px;
+}
+
+.btn_header-search_catalog {
+    display: flex;
+    height: 45px;
+        padding: 7px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        border-radius: 41px;
+        background: #4A58F6;
+        border: none;
+        color: white;
+        font-size: 16px;
+    }
+
+
+/*поисковая строка*/
+.search{
+    display: flex;
+        width: 386px;
+        height: 45px;
+        padding: 11px 5px 11px 17px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 50px;
+        border: 1px solid #000;
+}
+
+.btn_header-search_search{
+    display: flex;
+    width: 36px;
+    height: 36px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 25px;
+    background: #4A58F6;
+    border: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.search__wrapper{
+    position: relative;
+}
+
+/*кнопочки профиля итд*/
+
+
+
+
 
 
 
@@ -730,10 +825,6 @@ align-items: flex-start;
 gap: 20px;
 }
 
-h1, h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
 
 .select-all {
     display: flex;
