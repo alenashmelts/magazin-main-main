@@ -20,6 +20,7 @@ body {
     min-height: 100vh;
 }
 
+
 body{
     display: flex;
     flex-direction: column;   
@@ -32,11 +33,14 @@ html {
 header,
 footer {
     background-color: rgb(255, 255, 255);
-    min-height: 100px;
+    height: 100%;
+    margin: 0 auto;
 }
 
 main {
     flex-grow: 1;
+    width: 1280px;
+    margin: 0 auto;
 }
 
 .container {
@@ -90,13 +94,23 @@ h1{
 
 .container-header {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
+flex-direction: column;
+align-items: flex-start;
+gap: 40px;
+align-self: stretch;
+padding-top: 40px;
 }
 
 .breadcrumb-list {
     font-size: 16px;
+}
+
+.header-desktop{
+    display: flex;
+width: 1280px;
+flex-direction: column;
+align-items: center;
+gap: 20px;
 }
 
 
@@ -128,7 +142,15 @@ gap: 19px;
         border: none;
         color: white;
         font-size: 16px;
+        transition: background-color 0.3s;
     }
+    
+    
+    .btn_header-search_catalog:hover, .btn_header-search_catalog:hover {
+        background-color: #BDC1F5;
+    }
+
+
 
 
 /*поисковая строка*/
@@ -156,8 +178,8 @@ gap: 19px;
     background: #4A58F6;
     border: none;
     position: absolute;
-    left: 0;
-    top: 0;
+    right: 4px;
+    top: 4px;
 }
 
 .search__wrapper{
@@ -166,11 +188,47 @@ gap: 19px;
 
 /*кнопочки профиля итд*/
 
+.header-search_nav-wrapper{
+    display: flex;
+align-items: center;
+gap: 16px;
+}
+
+.btn_header-wrapper{
+    display: flex;
+width: 45px;
+height: 45px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 12px;
+border-radius: 70px;
+border: 1px solid #000;
+background-color: white;
+}
 
 
 
 
 
+/*---нижняя панелька шапки-----*/
+
+.header-bottom-container{
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 15px;
+align-self: stretch;
+}
+
+.header-bottom-container-common-item{
+list-style: none;
+display: flex;
+height: 45px;
+padding: 8px 21px;
+align-items: center;
+gap: 14px;
+}
 
 
 /*---------------------фильтры----------------*/
@@ -183,9 +241,19 @@ align-items: flex-start;
 gap: 25px;
 border-radius: 15px;
 border: 1px solid #000;
+height: 100%;
 }
 
 
+
+.filter-brand__item{
+    display: flex;
+    height: 30px;
+padding: 8px;
+align-items: center;
+gap: 8px;
+align-self: stretch;
+}
 
 .filter-section{
     display: flex;
@@ -219,8 +287,16 @@ border: 1px solid #000;
     background: #4A58F6;
     color: white;
     border: none;
-    transition: outline 0.2s, outline-offset 0.2s;
+    transition: background-color 0.3s;
 }
+
+
+.catalog__filter__button__filter:hover, .catalog__filter__button__filter:hover {
+    background-color: #BDC1F5;
+}
+
+
+
     
 .catalog__filter__button__clear{
     color: #0C0C0C;
@@ -231,7 +307,93 @@ border: 1px solid #000;
 
 
 
+/*-регулировка цены-*/
+.price-filter {
+    display: flex;
+    border-radius: 8px;
+    gap: 14px;
+    flex-direction: column;
+  }
 
+  .price-filter__label {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .price-filter__inputs {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .price-filter__input-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5px;
+  }
+
+  .price-filter__prefix {
+    color: #000000;
+    font-size: 14px;
+    /* white-space: nowrap; */
+  }
+
+  .price-filter__input-group {
+    border: 1px solid #ddd;
+    border-radius: 41px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background: white;
+    min-width: 68px;
+    height: 23px;
+  }
+
+  .price-filter__input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .price-filter__input::placeholder {
+    color: #999;
+  }
+
+  .price-filter__slider {
+    position: relative;
+    height: 4px;
+    background: #ddd;
+    border-radius: 2px;
+  }
+
+  .price-filter__slider-track {
+    position: absolute;
+    height: 100%;
+    background: #BCC3ED;
+    left: 0%;
+    right: 0%;
+  }
+
+  .price-filter__slider-input {
+    position: absolute;
+    width: 100%;
+    top: -8px;
+    pointer-events: none;
+    /* -webkit-appearance: none; */
+    background: none;
+  }
+
+  .price-filter__slider-input::-webkit-slider-thumb {
+    pointer-events: all;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #4A58F6;
+    border: 2px solid white;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
 
 
 
@@ -288,7 +450,16 @@ gap: 16px;
     background-color: white;
     border-radius: 70px;
 border: 1px solid #000;
+cursor: pointer;
+    transition: background-color 0.3s;
 }
+
+
+.lines_btn:hover, .lines_btn:hover {
+    background-color: #BDC1F5;
+    border: 1px solid #BDC1F5;
+}
+
 
 .square_btn{
     display: flex;
@@ -301,6 +472,14 @@ border: 1px solid #000;
     border: none;
     border-radius: 70px;
 background: #BCC3ED;
+cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.square_btn:hover, .square_btn:hover {
+    background-color: #ffffff;
+    border: 1px solid #000000;
 }
 
 
@@ -317,14 +496,16 @@ align-items: center;
 border-radius: 67px;
 background: #FFF;
 position: absolute;
-left: 450px;
-    z-index: 100;
+right: 0;
+top: 0;
+z-index: 100;
 }
 
 
 .catalog__card {
     width: 243px;
     height: 347px;
+    position: relative;
 }
 
 .catalog__img{
@@ -413,7 +594,15 @@ background: #4A58F6;
 border: none;
 font-size: 14px;
 color: rgb(255, 255, 255);
+cursor: pointer;
+    transition: background-color 0.3s;
 }
+
+
+.catalog__btn:hover, .catalog__btn:hover {
+    background-color: #BDC1F5;
+}
+
 
 
 

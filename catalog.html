@@ -7,6 +7,7 @@
   <title>Комплектующие для ПК</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/basket.js"></script>
 
 </head>
 
@@ -23,16 +24,26 @@
             <div class="search__wrapper">
               <input class="search" type="text" name="query" placeholder="Поиск">
               <button class="btn_header-search_search" type="submit"><img src="img/search.svg" alt=""></button>
-              </div>
+            </div>
           </form>
           <div class="header-search_nav-wrapper">
-            <img src="" alt="">
+            <button class="btn_header-wrapper" type="submit"><img src="img/заказы.svg" alt=""></button>
+            <button class="btn_header-wrapper" type="submit"><img src="img/like.svg" alt=""></button>
+            <button class="btn_header-wrapper" type="submit"><img src="img/basket.svg" alt=""></button>
+            <button class="btn_header-wrapper" type="submit"><img src="img/профиль.svg" alt=""></button>
           </div>
         </div>
-        <div class="header-bottom"></div>
+        <div class="header-bottom">
+          <div class="header-bottom-container">
+            <li class="header-bottom-container-common-item">Корпоративным клиентам <img src="img/стрелка вниз.svg" alt=""></li>
+            <li class="header-bottom-container-common-item">Покупателям <img src="img/стрелка вниз.svg" alt=""></li>
+            <li class="header-bottom-container-common-item">О компании </li>
+            <li class="header-bottom-container-common-item">Контакты <img src="img/стрелка вниз.svg" alt=""></li>
+          </div>
+        </div>
       </div>
       <div class="breadcrumb-list">
-<p>Каталог -> категория товара -> товары</p>
+        <p>Каталог -> категория товара -> товары</p>
       </div>
     </div>
   </header>
@@ -69,155 +80,6 @@
             </div>
           </div>
 
-          <style>
-            .price-filter {
-              display: flex;
-              border-radius: 8px;
-              gap: 14px;
-              flex-direction: column;
-            }
-
-            .price-filter__label {
-              font-weight: bold;
-              font-size: 14px;
-            }
-
-            .price-filter__inputs {
-              display: flex;
-              gap: 15px;
-              align-items: center;
-            }
-
-            .price-filter__input-wrapper {
-              display: flex;
-              justify-content: center;
-              align-items: flex-end;
-              gap: 5px;
-            }
-
-            .price-filter__prefix {
-              color: #000000;
-              font-size: 14px;
-              /* white-space: nowrap; */
-            }
-
-            .price-filter__input-group {
-              border: 1px solid #ddd;
-              border-radius: 41px;
-              padding-left: 12px;
-              /* padding-right: 12px; */
-              background: white;
-              min-width: 68px;
-              height: 23px;
-            }
-
-            .price-filter__input {
-              border: none;
-              outline: none;
-              width: 100%;
-              font-size: 13px;
-            }
-
-            .price-filter__input::placeholder {
-              color: #999;
-            }
-
-            .price-filter__slider {
-              position: relative;
-              height: 4px;
-              background: #ddd;
-              border-radius: 2px;
-            }
-
-            .price-filter__slider-track {
-              position: absolute;
-              height: 100%;
-              background: #BCC3ED;
-              left: 0%;
-              right: 0%;
-            }
-
-            .price-filter__slider-input {
-              position: absolute;
-              width: 100%;
-              top: -8px;
-              pointer-events: none;
-              /* -webkit-appearance: none; */
-              background: none;
-            }
-
-            .price-filter__slider-input::-webkit-slider-thumb {
-              pointer-events: all;
-              width: 18px;
-              height: 18px;
-              border-radius: 50%;
-              background: #4A58F6;
-              border: 2px solid white;
-              cursor: pointer;
-              -webkit-appearance: none;
-            }
-          </style>
-
-          <script>
-            const minPriceInput = document.getElementById('minPrice');
-            const maxPriceInput = document.getElementById('maxPrice');
-            const minSlider = document.getElementById('minSlider');
-            const maxSlider = document.getElementById('maxSlider');
-            const sliderTrack = document.querySelector('.price-filter__slider-track');
-
-            // Установка начальных значений
-            let minPrice = 0;
-            let maxPrice = 100000;
-            let minVal = 0;
-            let maxVal = 100000;
-
-            // Обновление позиции ползунков и цветной области
-            function updateSlider() {
-              sliderTrack.style.left = (minVal / maxPrice * 100) + '%';
-              sliderTrack.style.right = 100 - (maxVal / maxPrice * 100) + '%';
-            }
-
-            // Обработчики для ползунков
-            minSlider.addEventListener('input', function () {
-              minVal = parseInt(this.value);
-              if (minVal > maxVal) {
-                minVal = maxVal;
-                this.value = minVal;
-              }
-              minPriceInput.value = minVal;
-              updateSlider();
-            });
-
-            maxSlider.addEventListener('input', function () {
-              maxVal = parseInt(this.value);
-              if (maxVal < minVal) {
-                maxVal = minVal;
-                this.value = maxVal;
-              }
-              maxPriceInput.value = maxVal;
-              updateSlider();
-            });
-
-            // Обработчики для полей ввода
-            minPriceInput.addEventListener('input', function () {
-              minVal = parseInt(this.value) || 0;
-              if (minVal < minPrice) minVal = minPrice;
-              if (minVal > maxVal) minVal = maxVal;
-              minSlider.value = minVal;
-              updateSlider();
-            });
-
-            maxPriceInput.addEventListener('input', function () {
-              maxVal = parseInt(this.value) || maxPrice;
-              if (maxVal > maxPrice) maxVal = maxPrice;
-              if (maxVal < minVal) maxVal = minVal;
-              maxSlider.value = maxVal;
-              updateSlider();
-            });
-
-            // Инициализация
-            updateSlider();
-          </script>
           <div class="filter-section">
             <label class="price-filter__label">Производители</label>
             <div class="filter-brand">
