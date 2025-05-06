@@ -1306,4 +1306,9 @@ height: 16px;
 .filter-profile__item{
 display: flex;
 gap: 12px;
+
+}
+
+.filter-profile__checkbox{
+    
 }
