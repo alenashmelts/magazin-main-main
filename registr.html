@@ -15,7 +15,7 @@
             <div class="header-desktop">
                 <div class="header-search">
                     <div class="header-search_logo-catalog">
-                        <img src="img/logo.jpg" alt="">
+                        <a href="catalog.html"><img src="img/logo.jpg" alt=""></a>
                         <a class="btn_header-search_catalog" href="catalog.html">Каталог <img src="img/catalog.svg"
                                 alt=""></a>
                     </div>
@@ -52,30 +52,53 @@
     </header>
     <main>
         <h1>Профиль</h1>
-        <div class="catalog__filter">
-            <div class="price-filter">
+        <div class="container catalog">
+            <div class="catalog__filter catalog__filter_registr">
                 <div class="filter-section">
-                    <a class="filter-profil__checkbox" href="#"><img src="img/заказы.svg" alt="">Мои заказы</a>
-                    <a class="filter-profile__checkbox" href="#"><img src="img/райдокоин.svg" alt="">Мои бонусы</a>   
-                    <a class="filter-profile__checkbox" href="#"><img src="img/настройки.png" alt="">Настройки профиля</a>
-                    <a class="filter-v__checkbox" href="#"><img src="img/профиль.svg">Профиль для</a>
+                    <a class="filter-profile__checkbox" href="#"><img src="img/заказы.svg" alt="">Мои заказы</a>
+                    <a class="filter-profile__checkbox" href="#"><img src="img/райдокоин.svg" alt="">Мои бонусы</a>
+                    <a class="filter-profile__checkbox" href="#"><img src="img/настройки.png" alt="">Настройки
+                        профиля</a>
+                    <a class="filter-profile__checkbox" href="#"><img src="img/профиль.svg">Профиль для бизнеса</a>
                 </div>
             </div>
+            <form action="auth">
+                <div class="auth_form">
+                <div class="auth_fields">
+                    <div class="field">
+                        <p>Фамилия</p>
+                        <input class="auth__value" type="text" placeholder="Фамилия">
+                    </div>
+                    <div class="field">
+                        <p>Имя</p>
+                        <input class="auth__value" type="text" placeholder="Имя">
+                    </div>
+                    <div class="field">
+                        <p>Дата рождения</p>
+                        <input class="auth__value" type="text" placeholder="Дата рождения">
+                    </div>
+                    <div class="field">
+                        <p>Телефон</p>
+                        <input class="auth__value" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Телефон">
+                    </div>
+                    <div class="field">
+                        <p>Эл.почта</p>
+                        <input class="auth__value" type="password" placeholder="Эл.почта">
+                    </div>
+                </div>
+                <div class="auth_button">
+                    <button class="registr__btn1"> <img src="img/дверь.svg" alt="">Выйти</button>
+                    <button class="registr__btn2"> <img src="img/урна.svg" alt="">Удалить аккаунт</button>
+                    <!-- <input class="auth__btn auth__btn--login" type="submit" placeholder="Вход">
+                </div>
+                <div>
+                    <input class="auth__btn auth__btn--reg" type="submit" placeholder="Регистрация"> -->
+                </div>
+                </div>
+            </form>
+        </div>
     </main>
-    <form action="auth">
-        <div>
-            <input class="auth__value" type="text" placeholder="Введите логин">
-        </div>
-        <div>
-            <input class="auth__value" type="password" placeholder="Введите пароль">
-        </div>
-        <div>
-            <input class="auth__btn auth__btn--login" type="submit" placeholder="Вход">
-        </div>
-        <div>
-            <input class="auth__btn auth__btn--reg" type="submit" placeholder="Регистрация">
-        </div>
-    </form>
+
 
 </body>
 
