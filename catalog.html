@@ -16,8 +16,16 @@
     <div class="container-header">
       <div class="header-desktop">
         <div class="header-search">
+          <!-- <button class="menu_burger burger" type="button">
+           <span class="burger_line"></span>
+           <span class="burger_line"></span>
+           <span class="burger_line"></span>
+           <span class="burger_line"></span>
+          </button> -->
+
           <div class="header-search_logo-catalog">
-            <a href="catalog.html"><img src="img/logo.jpg" alt=""></a>
+            <a class="btn_header-wrapper btn_header-wrapper_burger" href="#"><img src="img/burger.svg" alt="заказы"></a>
+            <a href="catalog.html"><img class="logo-catalog" src="img/logo.jpg" alt="логоп"></a>
             <a class="btn_header-search_catalog" href="catalog.html">Каталог <img src="img/catalog.svg" alt=""></a>
           </div>
           <form class="header-search_presearch_button" action="/search" method="get">
@@ -27,19 +35,50 @@
             </div>
           </form>
           <div class="header-search_nav-wrapper">
-            <a class="btn_header-wrapper" href="#"><img src="img/заказы.svg" alt=""></a>
-            <a class="btn_header-wrapper" href="#"><img src="img/like.svg" alt=""></a>
-            <a class="btn_header-wrapper" href="basket.html"><img src="img/basket.svg" alt=""></a>
-            <a class="btn_header-wrapper" href="registr.html"><img src="img/профиль.svg" alt=""></a>
+            <a class="btn_header-wrapper" href="#"><img src="img/заказы.svg" alt="заказы"></a>
+            <a class="btn_header-wrapper" href="#"><img src="img/like.svg" alt="избранное"></a>
+            <a class="btn_header-wrapper" href="basket.html"><img src="img/basket.svg" alt="корзина"></a>
+            <a class="btn_header-wrapper" href="registr.html"><img src="img/профиль.svg" alt="профиль"></a>
           </div>
+        </div>
+        <div class="header-search-min">
+          <div class="header-search-catalog-wrapper">
+            <div class="header-search_logo-catalog">
+              <a class="btn_header-wrapper btn_header-wrapper_burger" href="#"><img src="img/burger.svg"
+                  alt="заказы"></a>
+              <a href="catalog.html"><img class="logo-catalog" src="img/logo.jpg" alt="логотип"></a>
+              <a class="btn_header-search_catalog" href="catalog.html">Каталог <img src="img/catalog.svg" alt=""></a>
+            </div>
+            <div class="header-search_nav-wrapper">
+              <a class="btn_header-wrapper" href="#"><img src="img/заказы.svg" alt="заказы"></a>
+              <a class="btn_header-wrapper" href="#"><img src="img/like.svg" alt="избранное"></a>
+              <a class="btn_header-wrapper" href="basket.html"><img src="img/basket.svg" alt="корзина"></a>
+              <a class="btn_header-wrapper" href="registr.html"><img src="img/профиль.svg" alt="профиль"></a>
+            </div>
+          </div>
+          <form class="header-search_presearch_button" action="/search" method="get">
+            <div class="search__wrapper">
+              <input class="search" type="text" name="query" placeholder="Поиск">
+              <button class="btn_header-search_search" type="submit"><img src="img/search.svg" alt=""></button>
+            </div>
+          </form>
+
         </div>
         <div class="header-bottom">
           <div class="header-bottom-container">
-            <li class="header-bottom-container-common-item">Корпоративным клиентам <img src="img/стрелка вниз.svg"
-                alt=""></li>
-            <li class="header-bottom-container-common-item">Покупателям <img src="img/стрелка вниз.svg" alt=""></li>
-            <li class="header-bottom-container-common-item">О компании </li>
-            <li class="header-bottom-container-common-item">Контакты <img src="img/стрелка вниз.svg" alt=""></li>
+            <ul>
+              <li class="header-bottom-container-common-item">Корпоративным клиентам <img src="img/стрелка вниз.svg"
+                  alt=""></li>
+            </ul>
+            <ul>
+              <li class="header-bottom-container-common-item">Покупателям <img src="img/стрелка вниз.svg" alt=""></li>
+            </ul>
+            <ul>
+              <li class="header-bottom-container-common-item">О компании </li>
+            </ul>
+            <ul>
+              <li class="header-bottom-container-common-item">Контакты <img src="img/стрелка вниз.svg" alt=""></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -76,7 +115,7 @@
 
             <div class="price-filter__slider">
               <div class="price-filter__slider-track"></div>
-              <input type="range" class="price-filter__slider-input" id="minSlider" min="0" max="100000" value="0">
+              <input type="range" class="price-filter__slider-input" id="minSlider1" min="0" max="100000" value="0">
               <input type="range" class="price-filter__slider-input" id="maxSlider" min="0" max="100000" value="100000">
             </div>
           </div>
@@ -145,8 +184,8 @@
           <div class="filter-section">
             <div class="filter-brand">
               <div class="filter-brand__item">
-                <input class="filter-brand__checkbox" type="checkbox" name="brand_apple" id="brand_apple">
-                <label class="filter-brand__checkbox" for="brand_apple" tabindex="0" id="brand_apple_label"
+                <input class="filter-brand__checkbox" type="checkbox" name="brand_apple" id="available in stock">
+                <label class="filter-brand__checkbox" for="brand_apple" tabindex="0" id="available in stock_label"
                   aria-label="бренд apple" role="checkbox" aria-checked="false">Есть в наличии</label>
               </div>
               <div class="filter-brand__item">
@@ -173,8 +212,8 @@
                   stroke="black" stroke-linecap="round" />
               </svg></button>
             <div class="position_lines-square">
-              <button class="lines_btn"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="23"
-                  viewBox="0 0 25 23" fill="none">
+              <button class="lines_btn"><svg class="lines_btn_svg" xmlns="http://www.w3.org/2000/svg" width="25"
+                  height="23" viewBox="0 0 25 23" fill="none">
                   <g clip-path="url(#clip0_3_946)">
                     <path
                       d="M23.78 0.5H1.22C0.822355 0.5 0.5 0.756816 0.5 1.07361V4.92639C0.5 5.24318 0.822355 5.5 1.22 5.5H23.78C24.1776 5.5 24.5 5.24318 24.5 4.92639V1.07361C24.5 0.756816 24.1776 0.5 23.78 0.5Z"
@@ -217,6 +256,41 @@
             </div>
           </div>
           <div class="catalog__grid">
+            <div class="catalog__card catalog__card-active">
+              <div class="like_catalog__card">
+                <svg class="like" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                  fill="none">
+                  <path
+                    d="M12 6.38889L11.3989 6.83735L11.3988 6.83733L11.3988 6.83725L11.3985 6.83691L11.3975 6.8356L11.3937 6.83045L11.3791 6.81087L11.3264 6.74025L11.1617 6.5193C11.0396 6.35552 10.9058 6.17583 10.8681 6.12465L10.8612 6.11519L10.8612 6.11514C10.4279 5.50684 9.47369 4.52307 8.23931 3.6949C7.00198 2.86474 5.57114 2.25 4.17756 2.25C3.97542 2.25 3.7014 2.33019 3.36638 2.53232C3.03723 2.73092 2.69425 3.0204 2.36941 3.36586C1.7397 4.03555 1.26962 4.81547 1.09995 5.34867C1.09314 5.41214 1.07996 5.47159 1.07296 5.50251C1.06309 5.54617 1.04757 5.60818 1.0317 5.67164C1.02316 5.70578 1.01451 5.74034 1.00659 5.77269C0.955386 5.98157 0.888013 6.27783 0.835036 6.65377C0.729143 7.40522 0.679438 8.48508 0.947203 9.79711C1.47233 12.3702 3.24403 15.9553 8.48591 19.7433H8.5144L8.71766 19.9017C9.53963 20.542 10.4772 21.2975 11.2084 21.891C11.5166 22.1412 11.789 22.3632 12.0009 22.5359C12.061 22.487 12.1262 22.434 12.1957 22.3775C12.3715 22.2345 12.5752 22.0689 12.796 21.8896C13.5281 21.295 14.4639 20.5379 15.2775 19.8933L15.4821 19.7311H15.5144C20.7562 15.949 22.5277 12.3669 23.0528 9.79551C23.3206 8.4843 23.2709 7.40486 23.165 6.6536C23.112 6.27776 23.0446 5.98154 22.9934 5.77268C22.9855 5.74036 22.9769 5.70584 22.9683 5.67174C22.9524 5.60825 22.9369 5.54621 22.927 5.50252C22.92 5.4716 22.9069 5.41217 22.9001 5.3487C22.7304 4.8155 22.2603 4.03556 21.6306 3.36586C21.3057 3.0204 20.9628 2.73092 20.6336 2.53232C20.2986 2.33019 20.0246 2.25 19.8224 2.25C18.4354 2.25 17.0077 2.86429 15.7697 3.6949C14.5416 4.51883 13.5865 5.49767 13.1431 6.10918C13.0814 6.19986 12.9419 6.38617 12.8363 6.52657C12.7741 6.60928 12.7142 6.68836 12.67 6.74668L12.6169 6.81671L12.6021 6.83618L12.5982 6.84134L12.5971 6.84268L12.5969 6.84304L12.5968 6.84314L12.5968 6.84316L12 6.38889ZM12 6.38889L11.3989 6.83736L11.9939 7.63504L12.5968 6.84318L12 6.38889Z"
+                    stroke="black" stroke-width="1.5" />
+                </svg>
+              </div>
+              <div class="img__wrapper">
+                <img class="catalog__img" src="img/image 38.png" alt="">
+                <i class=" fav-btn bi bi-heart-fill"></i>
+              </div>
+              <div class="text__card">
+                <a href="card.html" class="catalog__title">65" Телевизор TCL 65T7B, QLED, 4K Ultra HD, черный,
+                  СМАРТ ТВ</a>
+                <div class="catalog__price">
+                  <div class="price__1">
+                    <span class="price__now">11 990 &#8381;</span>
+                    <span class="price__early">12 000 &#8381;</span>
+                  </div>
+                  <div class="price__sale__2">
+                    <span class="price__sale">-30%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-quantity__btn">
+                <button class="catalog__btn catalog__btn_active">Оформить заказ</button>
+                <div class="quantity-control">
+                  <button class="quantity-btn minus">-</button>
+                  <span class="quantity">1</span>
+                  <button class="quantity-btn plus">+</button>
+                </div>
+              </div>
+            </div>
             <div class="catalog__card">
               <div class="like_catalog__card">
                 <svg class="like" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
@@ -243,7 +317,51 @@
                   </div>
                 </div>
               </div>
-              <button class="catalog__btn">В корзину <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              <button class="catalog__btn">В корзину <svg class="svg_catalog__btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24" fill="none">
+                  <g clip-path="url(#clip0_3_767)">
+                    <path
+                      d="M12.5 9.99835H23.1418C22.7431 12.6538 21.8668 14.4022 21.4672 15.1046C20.235 17.2554 18.5765 19.204 16.8966 20.6618C15.1958 22.1377 13.5615 23.0345 12.3883 23.2181C12.0847 23.2621 11.8392 23.2582 11.631 23.2213L11.6231 23.2199L11.6152 23.2187C10.4418 23.0363 8.8059 22.1392 7.1034 20.6618C5.42354 19.204 3.76506 17.2555 2.53291 15.1047C2.13326 14.4024 1.25688 12.654 0.858216 9.99835H11.5H12.5Z"
+                      stroke="white" stroke-width="1.5" />
+                    <path
+                      d="M5.4342 9.34228L5.49999 7.89261C5.49999 7.89261 5.49999 6.85906 6.15789 5.5302C6.52631 4.79194 7.07894 4.10738 7.69736 3.3557C8.36841 2.55033 9.23684 1.87919 10.0921 1.32886C10.8684 0.818789 11.5658 0.657715 11.9342 0.657715C12.8158 0.657715 13.3158 0.939594 14.2105 1.5302C14.9079 1.97315 15.6184 2.53691 16.2105 3.22147C16.8289 3.94631 17.2632 4.38926 17.7632 5.39597C18.5789 7.03355 18.5263 7.89261 18.5263 7.89261L18.5658 9.24832"
+                      stroke="white" stroke-width="1.5" stroke-miterlimit="10" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_3_767">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                </button>
+            </div>
+            <div class="catalog__card">
+              <div class="like_catalog__card">
+                <svg class="like" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                  fill="none">
+                  <path
+                    d="M12 6.38889L11.3989 6.83735L11.3988 6.83733L11.3988 6.83725L11.3985 6.83691L11.3975 6.8356L11.3937 6.83045L11.3791 6.81087L11.3264 6.74025L11.1617 6.5193C11.0396 6.35552 10.9058 6.17583 10.8681 6.12465L10.8612 6.11519L10.8612 6.11514C10.4279 5.50684 9.47369 4.52307 8.23931 3.6949C7.00198 2.86474 5.57114 2.25 4.17756 2.25C3.97542 2.25 3.7014 2.33019 3.36638 2.53232C3.03723 2.73092 2.69425 3.0204 2.36941 3.36586C1.7397 4.03555 1.26962 4.81547 1.09995 5.34867C1.09314 5.41214 1.07996 5.47159 1.07296 5.50251C1.06309 5.54617 1.04757 5.60818 1.0317 5.67164C1.02316 5.70578 1.01451 5.74034 1.00659 5.77269C0.955386 5.98157 0.888013 6.27783 0.835036 6.65377C0.729143 7.40522 0.679438 8.48508 0.947203 9.79711C1.47233 12.3702 3.24403 15.9553 8.48591 19.7433H8.5144L8.71766 19.9017C9.53963 20.542 10.4772 21.2975 11.2084 21.891C11.5166 22.1412 11.789 22.3632 12.0009 22.5359C12.061 22.487 12.1262 22.434 12.1957 22.3775C12.3715 22.2345 12.5752 22.0689 12.796 21.8896C13.5281 21.295 14.4639 20.5379 15.2775 19.8933L15.4821 19.7311H15.5144C20.7562 15.949 22.5277 12.3669 23.0528 9.79551C23.3206 8.4843 23.2709 7.40486 23.165 6.6536C23.112 6.27776 23.0446 5.98154 22.9934 5.77268C22.9855 5.74036 22.9769 5.70584 22.9683 5.67174C22.9524 5.60825 22.9369 5.54621 22.927 5.50252C22.92 5.4716 22.9069 5.41217 22.9001 5.3487C22.7304 4.8155 22.2603 4.03556 21.6306 3.36586C21.3057 3.0204 20.9628 2.73092 20.6336 2.53232C20.2986 2.33019 20.0246 2.25 19.8224 2.25C18.4354 2.25 17.0077 2.86429 15.7697 3.6949C14.5416 4.51883 13.5865 5.49767 13.1431 6.10918C13.0814 6.19986 12.9419 6.38617 12.8363 6.52657C12.7741 6.60928 12.7142 6.68836 12.67 6.74668L12.6169 6.81671L12.6021 6.83618L12.5982 6.84134L12.5971 6.84268L12.5969 6.84304L12.5968 6.84314L12.5968 6.84316L12 6.38889ZM12 6.38889L11.3989 6.83736L11.9939 7.63504L12.5968 6.84318L12 6.38889Z"
+                    stroke="black" stroke-width="1.5" />
+                </svg>
+              </div>
+              <div class="img__wrapper">
+                <img class="catalog__img" src="img/image 38.png" alt="">
+                <i class=" fav-btn bi bi-heart-fill"></i>
+              </div>
+              <div class="text__card">
+                <a href="card.html" class="catalog__title">65" Телевизор TCL 65T7B, QLED, 4K Ultra HD, черный,
+                  СМАРТ ТВ</a>
+                <div class="catalog__price">
+                  <div class="price__1">
+                    <span class="price__now">11 990 &#8381;</span>
+                    <span class="price__early">12 000 &#8381;</span>
+                  </div>
+                  <div class="price__sale__2">
+                    <span class="price__sale">-30%</span>
+                  </div>
+                </div>
+              </div>
+              <button class="catalog__btn">В корзину <svg class="svg_catalog__btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                   viewBox="0 0 24 24" fill="none">
                   <g clip-path="url(#clip0_3_767)">
                     <path
@@ -274,7 +392,7 @@
                 <i class=" fav-btn bi bi-heart-fill"></i>
               </div>
               <div class="text__card">
-                <a href="#" class="catalog__title">65" Телевизор TCL 65T7B, QLED, 4K Ultra HD, черный,
+                <a href="card.html" class="catalog__title">65" Телевизор TCL 65T7B, QLED, 4K Ultra HD, черный,
                   СМАРТ ТВ</a>
                 <div class="catalog__price">
                   <div class="price__1">
@@ -286,7 +404,7 @@
                   </div>
                 </div>
               </div>
-              <button class="catalog__btn">В корзину <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              <button class="catalog__btn">В корзину <svg class="svg_catalog__btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                   viewBox="0 0 24 24" fill="none">
                   <g clip-path="url(#clip0_3_767)">
                     <path
@@ -317,7 +435,7 @@
                 <i class=" fav-btn bi bi-heart-fill"></i>
               </div>
               <div class="text__card">
-                <a href="#" class="catalog__title">65" Телевизор TCL 65T7B, QLED, 4K Ultra HD, черный,
+                <a href="card.html" class="catalog__title">65" Телевизор TCL 65T7B, QLED, 4K Ultra HD, черный,
                   СМАРТ ТВ</a>
                 <div class="catalog__price">
                   <div class="price__1">
@@ -329,7 +447,7 @@
                   </div>
                 </div>
               </div>
-              <button class="catalog__btn">В корзину <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              <button class="catalog__btn">В корзину <svg class="svg_catalog__btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                   viewBox="0 0 24 24" fill="none">
                   <g clip-path="url(#clip0_3_767)">
                     <path
@@ -360,7 +478,7 @@
                 <i class=" fav-btn bi bi-heart-fill"></i>
               </div>
               <div class="text__card">
-                <a href="#" class="catalog__title">65" Телевизор TCL 65T7B, QLED, 4K Ultra HD, черный,
+                <a href="card.html" class="catalog__title">65" Телевизор TCL 65T7B, QLED, 4K Ultra HD, черный,
                   СМАРТ ТВ</a>
                 <div class="catalog__price">
                   <div class="price__1">
@@ -372,7 +490,7 @@
                   </div>
                 </div>
               </div>
-              <button class="catalog__btn">В корзину <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              <button class="catalog__btn">В корзину <svg class="svg_catalog__btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                   viewBox="0 0 24 24" fill="none">
                   <g clip-path="url(#clip0_3_767)">
                     <path
@@ -403,7 +521,7 @@
                 <i class=" fav-btn bi bi-heart-fill"></i>
               </div>
               <div class="text__card">
-                <a href="#" class="catalog__title">65" Телевизор TCL 65T7B, QLED, 4K Ultra HD, черный,
+                <a href="card.html" class="catalog__title">65" Телевизор TCL 65T7B, QLED, 4K Ultra HD, черный,
                   СМАРТ ТВ</a>
                 <div class="catalog__price">
                   <div class="price__1">
@@ -415,7 +533,7 @@
                   </div>
                 </div>
               </div>
-              <button class="catalog__btn">В корзину <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              <button class="catalog__btn">В корзину class="svg_catalog__btn" <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                   viewBox="0 0 24 24" fill="none">
                   <g clip-path="url(#clip0_3_767)">
                     <path
@@ -446,7 +564,7 @@
                 <i class=" fav-btn bi bi-heart-fill"></i>
               </div>
               <div class="text__card">
-                <a href="#" class="catalog__title">65" Телевизор TCL 65T7B, QLED, 4K Ultra HD, черный,
+                <a href="card.html" class="catalog__title">65" Телевизор TCL 65T7B, QLED, 4K Ultra HD, черный,
                   СМАРТ ТВ</a>
                 <div class="catalog__price">
                   <div class="price__1">
@@ -458,93 +576,7 @@
                   </div>
                 </div>
               </div>
-              <button class="catalog__btn">В корзину <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                  viewBox="0 0 24 24" fill="none">
-                  <g clip-path="url(#clip0_3_767)">
-                    <path
-                      d="M12.5 9.99835H23.1418C22.7431 12.6538 21.8668 14.4022 21.4672 15.1046C20.235 17.2554 18.5765 19.204 16.8966 20.6618C15.1958 22.1377 13.5615 23.0345 12.3883 23.2181C12.0847 23.2621 11.8392 23.2582 11.631 23.2213L11.6231 23.2199L11.6152 23.2187C10.4418 23.0363 8.8059 22.1392 7.1034 20.6618C5.42354 19.204 3.76506 17.2555 2.53291 15.1047C2.13326 14.4024 1.25688 12.654 0.858216 9.99835H11.5H12.5Z"
-                      stroke="white" stroke-width="1.5" />
-                    <path
-                      d="M5.4342 9.34228L5.49999 7.89261C5.49999 7.89261 5.49999 6.85906 6.15789 5.5302C6.52631 4.79194 7.07894 4.10738 7.69736 3.3557C8.36841 2.55033 9.23684 1.87919 10.0921 1.32886C10.8684 0.818789 11.5658 0.657715 11.9342 0.657715C12.8158 0.657715 13.3158 0.939594 14.2105 1.5302C14.9079 1.97315 15.6184 2.53691 16.2105 3.22147C16.8289 3.94631 17.2632 4.38926 17.7632 5.39597C18.5789 7.03355 18.5263 7.89261 18.5263 7.89261L18.5658 9.24832"
-                      stroke="white" stroke-width="1.5" stroke-miterlimit="10" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_3_767">
-                      <rect width="24" height="24" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg></button>
-            </div>
-            <div class="catalog__card">
-              <div class="like_catalog__card">
-                <svg class="like" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
-                  fill="none">
-                  <path
-                    d="M12 6.38889L11.3989 6.83735L11.3988 6.83733L11.3988 6.83725L11.3985 6.83691L11.3975 6.8356L11.3937 6.83045L11.3791 6.81087L11.3264 6.74025L11.1617 6.5193C11.0396 6.35552 10.9058 6.17583 10.8681 6.12465L10.8612 6.11519L10.8612 6.11514C10.4279 5.50684 9.47369 4.52307 8.23931 3.6949C7.00198 2.86474 5.57114 2.25 4.17756 2.25C3.97542 2.25 3.7014 2.33019 3.36638 2.53232C3.03723 2.73092 2.69425 3.0204 2.36941 3.36586C1.7397 4.03555 1.26962 4.81547 1.09995 5.34867C1.09314 5.41214 1.07996 5.47159 1.07296 5.50251C1.06309 5.54617 1.04757 5.60818 1.0317 5.67164C1.02316 5.70578 1.01451 5.74034 1.00659 5.77269C0.955386 5.98157 0.888013 6.27783 0.835036 6.65377C0.729143 7.40522 0.679438 8.48508 0.947203 9.79711C1.47233 12.3702 3.24403 15.9553 8.48591 19.7433H8.5144L8.71766 19.9017C9.53963 20.542 10.4772 21.2975 11.2084 21.891C11.5166 22.1412 11.789 22.3632 12.0009 22.5359C12.061 22.487 12.1262 22.434 12.1957 22.3775C12.3715 22.2345 12.5752 22.0689 12.796 21.8896C13.5281 21.295 14.4639 20.5379 15.2775 19.8933L15.4821 19.7311H15.5144C20.7562 15.949 22.5277 12.3669 23.0528 9.79551C23.3206 8.4843 23.2709 7.40486 23.165 6.6536C23.112 6.27776 23.0446 5.98154 22.9934 5.77268C22.9855 5.74036 22.9769 5.70584 22.9683 5.67174C22.9524 5.60825 22.9369 5.54621 22.927 5.50252C22.92 5.4716 22.9069 5.41217 22.9001 5.3487C22.7304 4.8155 22.2603 4.03556 21.6306 3.36586C21.3057 3.0204 20.9628 2.73092 20.6336 2.53232C20.2986 2.33019 20.0246 2.25 19.8224 2.25C18.4354 2.25 17.0077 2.86429 15.7697 3.6949C14.5416 4.51883 13.5865 5.49767 13.1431 6.10918C13.0814 6.19986 12.9419 6.38617 12.8363 6.52657C12.7741 6.60928 12.7142 6.68836 12.67 6.74668L12.6169 6.81671L12.6021 6.83618L12.5982 6.84134L12.5971 6.84268L12.5969 6.84304L12.5968 6.84314L12.5968 6.84316L12 6.38889ZM12 6.38889L11.3989 6.83736L11.9939 7.63504L12.5968 6.84318L12 6.38889Z"
-                    stroke="black" stroke-width="1.5" />
-                </svg>
-              </div>
-              <div class="img__wrapper">
-                <img class="catalog__img" src="img/image 38.png" alt="">
-                <i class=" fav-btn bi bi-heart-fill"></i>
-              </div>
-              <div class="text__card">
-                <a href="#" class="catalog__title">65" Телевизор TCL 65T7B, QLED, 4K Ultra HD, черный,
-                  СМАРТ ТВ</a>
-                <div class="catalog__price">
-                  <div class="price__1">
-                    <span class="price__now">11 990 &#8381;</span>
-                    <span class="price__early">12 000 &#8381;</span>
-                  </div>
-                  <div class="price__sale__2">
-                    <span class="price__sale">-30%</span>
-                  </div>
-                </div>
-              </div>
-              <button class="catalog__btn">В корзину <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                  viewBox="0 0 24 24" fill="none">
-                  <g clip-path="url(#clip0_3_767)">
-                    <path
-                      d="M12.5 9.99835H23.1418C22.7431 12.6538 21.8668 14.4022 21.4672 15.1046C20.235 17.2554 18.5765 19.204 16.8966 20.6618C15.1958 22.1377 13.5615 23.0345 12.3883 23.2181C12.0847 23.2621 11.8392 23.2582 11.631 23.2213L11.6231 23.2199L11.6152 23.2187C10.4418 23.0363 8.8059 22.1392 7.1034 20.6618C5.42354 19.204 3.76506 17.2555 2.53291 15.1047C2.13326 14.4024 1.25688 12.654 0.858216 9.99835H11.5H12.5Z"
-                      stroke="white" stroke-width="1.5" />
-                    <path
-                      d="M5.4342 9.34228L5.49999 7.89261C5.49999 7.89261 5.49999 6.85906 6.15789 5.5302C6.52631 4.79194 7.07894 4.10738 7.69736 3.3557C8.36841 2.55033 9.23684 1.87919 10.0921 1.32886C10.8684 0.818789 11.5658 0.657715 11.9342 0.657715C12.8158 0.657715 13.3158 0.939594 14.2105 1.5302C14.9079 1.97315 15.6184 2.53691 16.2105 3.22147C16.8289 3.94631 17.2632 4.38926 17.7632 5.39597C18.5789 7.03355 18.5263 7.89261 18.5263 7.89261L18.5658 9.24832"
-                      stroke="white" stroke-width="1.5" stroke-miterlimit="10" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_3_767">
-                      <rect width="24" height="24" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg></button>
-            </div>
-            <div class="catalog__card">
-              <div class="like_catalog__card">
-                <svg class="like" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
-                  fill="none">
-                  <path
-                    d="M12 6.38889L11.3989 6.83735L11.3988 6.83733L11.3988 6.83725L11.3985 6.83691L11.3975 6.8356L11.3937 6.83045L11.3791 6.81087L11.3264 6.74025L11.1617 6.5193C11.0396 6.35552 10.9058 6.17583 10.8681 6.12465L10.8612 6.11519L10.8612 6.11514C10.4279 5.50684 9.47369 4.52307 8.23931 3.6949C7.00198 2.86474 5.57114 2.25 4.17756 2.25C3.97542 2.25 3.7014 2.33019 3.36638 2.53232C3.03723 2.73092 2.69425 3.0204 2.36941 3.36586C1.7397 4.03555 1.26962 4.81547 1.09995 5.34867C1.09314 5.41214 1.07996 5.47159 1.07296 5.50251C1.06309 5.54617 1.04757 5.60818 1.0317 5.67164C1.02316 5.70578 1.01451 5.74034 1.00659 5.77269C0.955386 5.98157 0.888013 6.27783 0.835036 6.65377C0.729143 7.40522 0.679438 8.48508 0.947203 9.79711C1.47233 12.3702 3.24403 15.9553 8.48591 19.7433H8.5144L8.71766 19.9017C9.53963 20.542 10.4772 21.2975 11.2084 21.891C11.5166 22.1412 11.789 22.3632 12.0009 22.5359C12.061 22.487 12.1262 22.434 12.1957 22.3775C12.3715 22.2345 12.5752 22.0689 12.796 21.8896C13.5281 21.295 14.4639 20.5379 15.2775 19.8933L15.4821 19.7311H15.5144C20.7562 15.949 22.5277 12.3669 23.0528 9.79551C23.3206 8.4843 23.2709 7.40486 23.165 6.6536C23.112 6.27776 23.0446 5.98154 22.9934 5.77268C22.9855 5.74036 22.9769 5.70584 22.9683 5.67174C22.9524 5.60825 22.9369 5.54621 22.927 5.50252C22.92 5.4716 22.9069 5.41217 22.9001 5.3487C22.7304 4.8155 22.2603 4.03556 21.6306 3.36586C21.3057 3.0204 20.9628 2.73092 20.6336 2.53232C20.2986 2.33019 20.0246 2.25 19.8224 2.25C18.4354 2.25 17.0077 2.86429 15.7697 3.6949C14.5416 4.51883 13.5865 5.49767 13.1431 6.10918C13.0814 6.19986 12.9419 6.38617 12.8363 6.52657C12.7741 6.60928 12.7142 6.68836 12.67 6.74668L12.6169 6.81671L12.6021 6.83618L12.5982 6.84134L12.5971 6.84268L12.5969 6.84304L12.5968 6.84314L12.5968 6.84316L12 6.38889ZM12 6.38889L11.3989 6.83736L11.9939 7.63504L12.5968 6.84318L12 6.38889Z"
-                    stroke="black" stroke-width="1.5" />
-                </svg>
-              </div>
-              <div class="img__wrapper">
-                <img class="catalog__img" src="img/image 38.png" alt="">
-                <i class=" fav-btn bi bi-heart-fill"></i>
-              </div>
-              <div class="text__card">
-                <a href="#" class="catalog__title">65" Телевизор TCL 65T7B, QLED, 4K Ultra HD, черный,
-                  СМАРТ ТВ</a>
-                <div class="catalog__price">
-                  <div class="price__1">
-                    <span class="price__now">11 990 &#8381;</span>
-                    <span class="price__early">12 000 &#8381;</span>
-                  </div>
-                  <div class="price__sale__2">
-                    <span class="price__sale">-30%</span>
-                  </div>
-                </div>
-              </div>
-              <button class="catalog__btn">В корзину <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              <button class="catalog__btn">В корзину <svg class="svg_catalog__btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                   viewBox="0 0 24 24" fill="none">
                   <g clip-path="url(#clip0_3_767)">
                     <path
@@ -618,10 +650,11 @@
               font-weight: bold;
             }
 
-            .arrow_l{
+            .arrow_l {
               transform: rotate(90deg);
             }
-            .arrow_r{
+
+            .arrow_r {
               transform: rotate(270deg);
             }
           </style>

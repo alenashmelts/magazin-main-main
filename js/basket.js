@@ -105,3 +105,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Инициализация
             updateSlider();
+
+
+
+
+
+            

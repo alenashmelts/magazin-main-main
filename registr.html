@@ -33,15 +33,50 @@
                         <a class="btn_header-wrapper" href="registr.html"><img src="img/профиль.svg" alt=""></a>
                     </div>
                 </div>
+                <div class="header-search-min">
+                    <div class="header-search-catalog-wrapper">
+                        <div class="header-search_logo-catalog">
+                            <a class="btn_header-wrapper btn_header-wrapper_burger" href="#"><img src="img/burger.svg"
+                                    alt="заказы"></a>
+                            <a href="catalog.html"><img class="logo-catalog" src="img/logo.jpg" alt="логотип"></a>
+                            <a class="btn_header-search_catalog" href="catalog.html">Каталог <img src="img/catalog.svg"
+                                    alt=""></a>
+                        </div>
+                        <div class="header-search_nav-wrapper">
+                            <a class="btn_header-wrapper" href="#"><img src="img/заказы.svg" alt="заказы"></a>
+                            <a class="btn_header-wrapper" href="#"><img src="img/like.svg" alt="избранное"></a>
+                            <a class="btn_header-wrapper" href="basket.html"><img src="img/basket.svg"
+                                    alt="корзина"></a>
+                            <a class="btn_header-wrapper" href="registr.html"><img src="img/профиль.svg"
+                                    alt="профиль"></a>
+                        </div>
+                    </div>
+                    <form class="header-search_presearch_button" action="/search" method="get">
+                        <div class="search__wrapper">
+                            <input class="search" type="text" name="query" placeholder="Поиск">
+                            <button class="btn_header-search_search" type="submit"><img src="img/search.svg"
+                                    alt=""></button>
+                        </div>
+                    </form>
+
+                </div>
                 <div class="header-bottom">
                     <div class="header-bottom-container">
-                        <li class="header-bottom-container-common-item">Корпоративным клиентам <img
-                                src="img/стрелка вниз.svg" alt=""></li>
-                        <li class="header-bottom-container-common-item">Покупателям <img src="img/стрелка вниз.svg"
-                                alt=""></li>
-                        <li class="header-bottom-container-common-item">О компании </li>
-                        <li class="header-bottom-container-common-item">Контакты <img src="img/стрелка вниз.svg" alt="">
-                        </li>
+                        <ul>
+                            <li class="header-bottom-container-common-item">Корпоративным клиентам <img
+                                    src="img/стрелка вниз.svg" alt=""></li>
+                        </ul>
+                        <ul>
+                            <li class="header-bottom-container-common-item">Покупателям <img src="img/стрелка вниз.svg"
+                                    alt=""></li>
+                        </ul>
+                        <ul>
+                            <li class="header-bottom-container-common-item">О компании </li>
+                        </ul>
+                        <ul>
+                            <li class="header-bottom-container-common-item">Контакты <img src="img/стрелка вниз.svg"
+                                    alt=""></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -51,51 +86,57 @@
         </div>
     </header>
     <main>
-        <h1>Профиль</h1>
-        <div class="container catalog">
-            <div class="catalog__filter catalog__filter_registr">
-                <div class="filter-section">
-                    <a class="filter-profile__checkbox" href="#"><img src="img/заказы.svg" alt="">Мои заказы</a>
-                    <a class="filter-profile__checkbox" href="#"><img src="img/райдокоин.svg" alt="">Мои бонусы</a>
-                    <a class="filter-profile__checkbox" href="#"><img src="img/настройки.png" alt="">Настройки
-                        профиля</a>
-                    <a class="filter-profile__checkbox" href="#"><img src="img/профиль.svg">Профиль для бизнеса</a>
-                </div>
-            </div>
-            <form action="auth">
-                <div class="auth_form">
-                <div class="auth_fields">
-                    <div class="field">
-                        <p>Фамилия</p>
-                        <input class="auth__value" type="text" placeholder="Фамилия">
-                    </div>
-                    <div class="field">
-                        <p>Имя</p>
-                        <input class="auth__value" type="text" placeholder="Имя">
-                    </div>
-                    <div class="field">
-                        <p>Дата рождения</p>
-                        <input class="auth__value" type="text" placeholder="Дата рождения">
-                    </div>
-                    <div class="field">
-                        <p>Телефон</p>
-                        <input class="auth__value" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Телефон">
-                    </div>
-                    <div class="field">
-                        <p>Эл.почта</p>
-                        <input class="auth__value" type="password" placeholder="Эл.почта">
+        <div class="container_geristr">
+            <h1>Профиль</h1>
+            <div class="container catalog">
+                <div class="catalog__filter_registr">
+                    <div class="filter-section">
+                        <a class="filter-profile__checkbox" href="#"><img src="img/заказы.svg" alt="">Мои заказы</a>
+                        <a class="filter-profile__checkbox" href="#"><img src="img/райдокоин.svg" alt="">Мои бонусы</a>
+                        <a class="filter-profile__checkbox filter-profile__checkbox_activ" href="#"><img
+                                src="img/настройки.png" alt="">Настройки
+                            профиля</a>
+                        <a class="filter-profile__checkbox" href="#"><img src="img/профиль.svg" alt="профиль">Профиль
+                            для бизнеса</a>
                     </div>
                 </div>
-                <div class="auth_button">
-                    <button class="registr__btn1"> <img src="img/дверь.svg" alt="">Выйти</button>
-                    <button class="registr__btn2"> <img src="img/урна.svg" alt="">Удалить аккаунт</button>
-                    <!-- <input class="auth__btn auth__btn--login" type="submit" placeholder="Вход">
+                <form action="auth">
+                    <div class="auth_form">
+                        <div class="auth_fields">
+                            <div class="field">
+                                <p>Фамилия</p>
+                                <input class="auth__value" type="text" placeholder="Фамилия">
+                            </div>
+                            <div class="field">
+                                <p>Имя</p>
+                                <input class="auth__value" type="text" placeholder="Имя">
+                            </div>
+                            <div class="field">
+                                <p>Дата рождения</p>
+                                <input class="auth__value" type="text" placeholder="Дата рождения">
+                            </div>
+                            <div class="field">
+                                <p>Телефон</p>
+                                <input class="auth__value" type="tel" id="phone" name="phone"
+                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Телефон">
+                            </div>
+                            <div class="field">
+                                <p>Эл.почта</p>
+                                <input class="auth__value" type="password" placeholder="Эл.почта">
+                            </div>
+                        </div>
+                        <div class="auth_button">
+                            <button class="registr__btn1"> <img src="img/дверь.svg" alt="Выйти">Выйти</button>
+                            <button class="registr__btn2"> <img src="img/урна.svg" alt="Удалить аккаунт">Удалить
+                                аккаунт</button>
+                            <!-- <input class="auth__btn auth__btn--login" type="submit" placeholder="Вход">
                 </div>
                 <div>
                     <input class="auth__btn auth__btn--reg" type="submit" placeholder="Регистрация"> -->
-                </div>
-                </div>
-            </form>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
 

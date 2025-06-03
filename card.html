@@ -31,12 +31,35 @@
                 <a class="btn_header-wrapper" href="registr.html"><img src="img/профиль.svg" alt=""></a>
               </div>
             </div>
+            <div class="header-search-min">
+              <div class="header-search-catalog-wrapper">
+                <div class="header-search_logo-catalog">
+                  <a class="btn_header-wrapper btn_header-wrapper_burger" href="#"><img src="img/burger.svg"
+                      alt="заказы"></a>
+                  <a href="catalog.html"><img class="logo-catalog" src="img/logo.jpg" alt="логотип"></a>
+                  <a class="btn_header-search_catalog" href="catalog.html">Каталог <img src="img/catalog.svg" alt=""></a>
+                </div>
+                <div class="header-search_nav-wrapper">
+                  <a class="btn_header-wrapper" href="#"><img src="img/заказы.svg" alt="заказы"></a>
+                  <a class="btn_header-wrapper" href="#"><img src="img/like.svg" alt="избранное"></a>
+                  <a class="btn_header-wrapper" href="basket.html"><img src="img/basket.svg" alt="корзина"></a>
+                  <a class="btn_header-wrapper" href="registr.html"><img src="img/профиль.svg" alt="профиль"></a>
+                </div>
+              </div>
+              <form class="header-search_presearch_button" action="/search" method="get">
+                <div class="search__wrapper">
+                  <input class="search" type="text" name="query" placeholder="Поиск">
+                  <button class="btn_header-search_search" type="submit"><img src="img/search.svg" alt=""></button>
+                </div>
+              </form>
+    
+            </div>
             <div class="header-bottom">
               <div class="header-bottom-container">
-                <li class="header-bottom-container-common-item">Корпоративным клиентам <img src="img/стрелка вниз.svg" alt=""></li>
-                <li class="header-bottom-container-common-item">Покупателям <img src="img/стрелка вниз.svg" alt=""></li>
-                <li class="header-bottom-container-common-item">О компании </li>
-                <li class="header-bottom-container-common-item">Контакты <img src="img/стрелка вниз.svg" alt=""></li>
+                <ul><li class="header-bottom-container-common-item">Корпоративным клиентам <img src="img/стрелка вниз.svg" alt=""></li></ul>
+                <ul><li class="header-bottom-container-common-item">Покупателям <img src="img/стрелка вниз.svg" alt=""></li></ul>
+                <ul><li class="header-bottom-container-common-item">О компании </li></ul>
+                <ul><li class="header-bottom-container-common-item">Контакты <img src="img/стрелка вниз.svg" alt=""></li></ul>
               </div>
             </div>
           </div>
@@ -50,7 +73,7 @@
             <div class="common">
                 <div class="common__block1">
                     <div class="common__block1__photos">
-                        </head>
+                        
                         <div class="common__block1__photos">
                             <div class="thumbnails">
                                 <div class="thumbnails__card"><img src="img/n1.jpg" alt="Товар 1" class="thumb active"
@@ -86,23 +109,23 @@
                                             <!-- <input class="filter-color__checkbox" type="checkbox" name="color-red" id="color-red"> -->
                                             <label class="filter-color__label" for="color-black"
                                                 aria-label="черный цвет"
-                                                style="background-color: rgba(56, 56, 56, 1);"></label>
+                                                style="background-color: rgba(56, 56, 56, 1);" tabindex="0"></label>
                                         </div>
                                         <div class="filter-color__item">
                                             <!-- <input class="filter-color__checkbox" type="checkbox" name="color-red" id="color-red"> -->
                                             <label class="filter-color__label" for="color-red" aria-label="красный цвет"
-                                                style="background-color: rgba(255, 82, 82, 1);"></label>
+                                                style="background-color: rgba(255, 82, 82, 1);" tabindex="0"></label>
                                         </div>
                                         <div class="filter-color__item">
                                             <!-- <input class="filter-color__checkbox" type="checkbox" name="color-red" id="color-red"> -->
                                             <label class="filter-color__label" for="color-blue" aria-label="синий цвет"
-                                                style="background-color: rgba(74, 88, 246, 1);"></label>
+                                                style="background-color: rgba(74, 88, 246, 1);" tabindex="0"></label>
                                         </div>
                                         <div class="filter-color__item">
                                             <!-- <input class="filter-color__checkbox" type="checkbox" name="color-red" id="color-red"> -->
                                             <label class="filter-color__label" for="color-green"
                                                 aria-label="зеленый цвет"
-                                                style="background-color: rgba(68, 164, 122, 1);"></label>
+                                                style="background-color: rgba(68, 164, 122, 1);" tabindex="0"></label>
                                         </div>
                                     </div>
                                 </div>
@@ -110,22 +133,20 @@
                                     <h3 class="common__block1__text__description__specifications-h3">Память/модель</h3>
                                     <div class="filter-memory">
                                         <div class="filter-memory__item">
-                                            <input class="filter-memory__checkbox" type="checkbox" name="memory-red"
-                                                id="memory-red">
-                                            <label class="filter-memory__label" for="memory-black"
-                                                aria-label="черный цвет">32 Гб</label>
+                                            <input class="filter-memory__checkbox" type="checkbox" name="memory-red" id="memory-black" >
+                                            <label class="filter-memory__label" for="memory-black" aria-label="черный цвет" tabindex="0">32 Гб</label>
                                         </div>
                                         <div class="filter-memory__item">
                                             <input class="filter-memory__checkbox" type="checkbox" name="memory-red"
                                                 id="memory-red">
                                             <label class="filter-memory__label" for="memory-red"
-                                                aria-label="красный цвет">64 Гб</label>
+                                                aria-label="красный цвет" tabindex="0">64 Гб</label>
                                         </div>
                                         <div class="filter-memory__item">
                                             <input class="filter-memory__checkbox" type="checkbox" name="memory-red"
-                                                id="memory-red">
+                                                id="memory-blue">
                                             <label class="filter-memory__label" for="memory-blue"
-                                                aria-label="синий цвет">256 Гб</label>
+                                                aria-label="синий цвет" tabindex="0">256 Гб</label>
                                         </div>
                                     </div>
                                 </div>
@@ -152,31 +173,78 @@
                                 <div class="common__block1__text__purchase__prices__sale">-30%</div>
                             </div>
                             <div class="common__block1__text__purchase__button">
-                                <button class="common__block1__text__purchase__button__basket">В корзину <svg
-                                        xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
-                                        fill="none">
-                                        <g clip-path="url(#clip0_31372_4945)">
-                                            <path
-                                                d="M13 9.99835H23.6418C23.2431 12.6538 22.3668 14.4022 21.9672 15.1046C20.735 17.2554 19.0765 19.204 17.3966 20.6618C15.6958 22.1377 14.0615 23.0345 12.8883 23.2181C12.5847 23.2621 12.3392 23.2582 12.131 23.2213L12.1231 23.2199L12.1152 23.2187C10.9418 23.0363 9.3059 22.1392 7.6034 20.6618C5.92354 19.204 4.26506 17.2555 3.03291 15.1047C2.63326 14.4024 1.75688 12.654 1.35822 9.99835H12H13Z"
-                                                stroke="white" stroke-width="1.5" />
-                                            <path
-                                                d="M5.93359 9.34228L5.99938 7.89261C5.99938 7.89261 5.99938 6.85906 6.65728 5.5302C7.0257 4.79194 7.57833 4.10738 8.19675 3.3557C8.8678 2.55033 9.73623 1.87919 10.5915 1.32886C11.3678 0.818789 12.0652 0.657715 12.4336 0.657715C13.3152 0.657715 13.8152 0.939594 14.7099 1.5302C15.4073 1.97315 16.1178 2.53691 16.7099 3.22147C17.3283 3.94631 17.7625 4.38926 18.2625 5.39597C19.0783 7.03355 19.0257 7.89261 19.0257 7.89261L19.0652 9.24832"
-                                                stroke="white" stroke-width="1.5" stroke-miterlimit="10" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_31372_4945">
-                                                <rect width="24" height="24" fill="white" transform="translate(0.5)" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg></button>
-                                <button class="common__block1__text__purchase__button__favourites"><svg
+                                <div class="product-actions">
+                                        <button id="addToCartBtn" class="add-to-cart">В корзину<svg
+                                            xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                            fill="none">
+                                            <g clip-path="url(#clip0_31372_4945)">
+                                                <path
+                                                    d="M13 9.99835H23.6418C23.2431 12.6538 22.3668 14.4022 21.9672 15.1046C20.735 17.2554 19.0765 19.204 17.3966 20.6618C15.6958 22.1377 14.0615 23.0345 12.8883 23.2181C12.5847 23.2621 12.3392 23.2582 12.131 23.2213L12.1231 23.2199L12.1152 23.2187C10.9418 23.0363 9.3059 22.1392 7.6034 20.6618C5.92354 19.204 4.26506 17.2555 3.03291 15.1047C2.63326 14.4024 1.75688 12.654 1.35822 9.99835H12H13Z"
+                                                    stroke="white" stroke-width="1.5" />
+                                                <path
+                                                    d="M5.93359 9.34228L5.99938 7.89261C5.99938 7.89261 5.99938 6.85906 6.65728 5.5302C7.0257 4.79194 7.57833 4.10738 8.19675 3.3557C8.8678 2.55033 9.73623 1.87919 10.5915 1.32886C11.3678 0.818789 12.0652 0.657715 12.4336 0.657715C13.3152 0.657715 13.8152 0.939594 14.7099 1.5302C15.4073 1.97315 16.1178 2.53691 16.7099 3.22147C17.3283 3.94631 17.7625 4.38926 18.2625 5.39597C19.0783 7.03355 19.0257 7.89261 19.0257 7.89261L19.0652 9.24832"
+                                                    stroke="white" stroke-width="1.5" stroke-miterlimit="10" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_31372_4945">
+                                                    <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg></button>
+                                        <div id="checkoutSection" class="checkout-section" style="display: none;">
+                                          <button class="checkout-btn">Оформить заказ</button>
+                                          <div class="quantity-control">
+                                            <button class="quantity-btn minus">-</button>
+                                            <span class="quantity">1</span>
+                                            <button class="quantity-btn plus">+</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      
+                                      <script>
+                                        document.addEventListener('DOMContentLoaded', function() {
+                                          const addToCartBtn = document.getElementById('addToCartBtn');
+                                          const checkoutSection = document.getElementById('checkoutSection');
+                                          const minusBtn = checkoutSection.querySelector('.minus');
+                                          const plusBtn = checkoutSection.querySelector('.plus');
+                                          const quantityDisplay = checkoutSection.querySelector('.quantity');
+                                          
+                                          let quantity = 1;
+                                          
+                                          // Обработчик кнопки "В корзину"
+                                          addToCartBtn.addEventListener('click', function() {
+                                            this.style.display = 'none';
+                                            checkoutSection.style.display = 'flex';
+                                          });
+                                          
+                                          // Уменьшение количества
+                                          minusBtn.addEventListener('click', function() {
+                                            if (quantity > 1) {
+                                              quantity--;
+                                              quantityDisplay.textContent = quantity;
+                                            }
+                                          });
+                                          
+                                          // Увеличение количества
+                                          plusBtn.addEventListener('click', function() {
+                                            quantity++;
+                                            quantityDisplay.textContent = quantity;
+                                          });
+                                          
+                                          // Оформление заказа
+                                          checkoutSection.querySelector('.checkout-btn').addEventListener('click', function() {
+                                            alert(`Заказ оформлен на ${quantity} товар(ов)`);
+                                          });
+                                        });
+                                      </script>
+                                <button class="common__block1__text__purchase__button__favourites"><svg class="like"
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
                                         fill="none">
                                         <path
                                             d="M12 6.38889L11.3989 6.83735L11.3988 6.83733L11.3988 6.83725L11.3985 6.83691L11.3975 6.8356L11.3937 6.83045L11.3791 6.81087L11.3264 6.74025L11.1617 6.5193C11.0396 6.35552 10.9058 6.17583 10.8681 6.12465L10.8612 6.11519L10.8612 6.11514C10.4279 5.50684 9.47369 4.52307 8.23931 3.6949C7.00198 2.86474 5.57114 2.25 4.17756 2.25C3.97542 2.25 3.7014 2.33019 3.36638 2.53232C3.03723 2.73092 2.69425 3.0204 2.36941 3.36586C1.7397 4.03555 1.26962 4.81547 1.09995 5.34867C1.09314 5.41214 1.07996 5.47159 1.07296 5.50251C1.06309 5.54617 1.04757 5.60818 1.0317 5.67164C1.02316 5.70578 1.01451 5.74034 1.00659 5.77269C0.955386 5.98157 0.888013 6.27783 0.835036 6.65377C0.729143 7.40522 0.679438 8.48508 0.947203 9.79711C1.47233 12.3702 3.24403 15.9553 8.48591 19.7433H8.5144L8.71766 19.9017C9.53963 20.542 10.4772 21.2975 11.2084 21.891C11.5166 22.1412 11.789 22.3632 12.0009 22.5359C12.061 22.487 12.1262 22.434 12.1957 22.3775C12.3715 22.2345 12.5752 22.0689 12.796 21.8896C13.5281 21.295 14.4639 20.5379 15.2775 19.8933L15.4821 19.7311H15.5144C20.7562 15.949 22.5277 12.3669 23.0528 9.79551C23.3206 8.4843 23.2709 7.40486 23.165 6.6536C23.112 6.27776 23.0446 5.98154 22.9934 5.77268C22.9855 5.74036 22.9769 5.70584 22.9683 5.67174C22.9524 5.60825 22.9369 5.54621 22.927 5.50252C22.92 5.4716 22.9069 5.41217 22.9001 5.3487C22.7304 4.8155 22.2603 4.03556 21.6306 3.36586C21.3057 3.0204 20.9628 2.73092 20.6336 2.53232C20.2986 2.33019 20.0246 2.25 19.8224 2.25C18.4354 2.25 17.0077 2.86429 15.7697 3.6949C14.5416 4.51883 13.5865 5.49767 13.1431 6.10918C13.0814 6.19986 12.9419 6.38617 12.8363 6.52657C12.7741 6.60928 12.7142 6.68836 12.67 6.74668L12.6169 6.81671L12.6021 6.83618L12.5982 6.84134L12.5971 6.84268L12.5969 6.84304L12.5968 6.84314L12.5968 6.84316L12 6.38889ZM12 6.38889L11.3989 6.83736L11.9939 7.63504L12.5968 6.84318L12 6.38889Z"
                                             stroke="black" stroke-width="1.5" />
                                     </svg></button>
-                                <button class="common__block1__text__purchase__button__mail"><svg
+                                <button class="common__block1__text__purchase__button__mail"><svg class="like 
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="19" viewBox="0 0 24 19"
                                         fill="none">
                                         <path
@@ -184,12 +252,229 @@
                                             stroke="#0C0C0C" stroke-width="1.5" stroke-linecap="round"
                                             stroke-linejoin="round" />
                                     </svg></button>
+                                    
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="common__block2">
-
+                    <div class="product-info">
+                        <!-- Вкладки -->
+                        <div class="product-tabs">
+                          <button class="tab-btn active">Характеристики</button>
+                          <button class="tab-btn">Отзывы <span class="counter">3</span></button>
+                          <button class="tab-btn">Вопросы о товаре <span class="counter">6</span></button>
+                        </div>
+                        
+                        <!-- Содержимое вкладок -->
+                        <div class="tab-content active" id="specifications">
+                          <div class="specs-block">
+                            <h3 class="specs-title">Общие характеристики</h3>
+                            <div class="specs-table">
+                              <div class="specs-row">
+                                <div class="specs-name">Цвет</div>
+                                <div class="specs-value">Черный</div>
+                              </div>
+                              <div class="specs-row">
+                                <div class="specs-name">Масса</div>
+                                <div class="specs-value">135 кг</div>
+                              </div>
+                              <div class="specs-row">
+                                <div class="specs-name">Ширина</div>
+                                <div class="specs-value">313,6 мм</div>
+                              </div>
+                              <div class="specs-row">
+                                <div class="specs-name">Глубина</div>
+                                <div class="specs-value">220,6 мм</div>
+                              </div>
+                              <div class="specs-row">
+                                <div class="specs-name">Высота</div>
+                                <div class="specs-value">16,9 мм</div>
+                              </div>
+                              <div class="specs-row">
+                                <div class="specs-name">Дизготаль</div>
+                                <div class="specs-value">14 °</div>
+                              </div>
+                              <div class="specs-row">
+                                <div class="specs-name">Процессор</div>
+                                <div class="specs-value">R=5.7430U</div>
+                              </div>
+                              <div class="specs-row">
+                                <div class="specs-name">Название формата</div>
+                                <div class="specs-value">WQXGA</div>
+                              </div>
+                              <div class="specs-row">
+                                <div class="specs-name">Разрешение</div>
+                                <div class="specs-value">2560x1600</div>
+                              </div>
+                              <div class="specs-row">
+                                <div class="specs-name">Соотношение сторон</div>
+                                <div class="specs-value">16:10</div>
+                              </div>
+                              <div class="specs-row">
+                                <div class="specs-name">Тип матрицы</div>
+                                <div class="specs-value">IPS</div>
+                              </div>
+                              <div class="specs-row">
+                                <div class="specs-name">Частота обновления</div>
+                                <div class="specs-value">60 Гц</div>
+                              </div>
+                              <div class="specs-row">
+                                <div class="specs-name">Оптический привод</div>
+                                <div class="specs-value">нет</div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="specs-block">
+                            <h3 class="specs-title">Дополнительные характеристики</h3>
+                            <div class="specs-table">
+                              <!-- Добавьте остальные характеристики аналогично -->
+                            </div>
+                          </div>
+                          
+                          <div class="specs-block">
+                            <h3 class="specs-title">Характеристики процессора</h3>
+                            <div class="specs-table">
+                              <!-- Добавьте характеристики процессора -->
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="tab-content" id="reviews">
+                          <p>Содержимое вкладки отзывов</p>
+                        </div>
+                        
+                        <div class="tab-content" id="questions">
+                          <p>Содержимое вкладки вопросов</p>
+                        </div>
+                      </div>
+                      
+                      <style>
+                        .product-info {
+                          max-width: 800px;
+                          margin: 0 auto;
+                          color: #333;
+                        }
+                        
+                        .product-tabs {
+                          display: flex;
+                          border-bottom: 1px solid #e0e0e0;
+                          margin-bottom: 20px;
+                        }
+                        
+                        .tab-btn {
+                          padding: 12px 20px;
+                          background: none;
+                          border: none;
+                          cursor: pointer;
+                          font-size: 16px;
+                          font-weight: bold;
+                          color: #555;
+                          position: relative;
+                          margin-right: 5px;
+                        }
+                        
+                        .tab-btn:hover {
+                          color: #000;
+                        }
+                        
+                        .tab-btn.active {
+                          color: #000;
+                        }
+                        
+                        .tab-btn.active::after {
+                          content: '';
+                          position: absolute;
+                          bottom: -1px;
+                          left: 0;
+                          width: 100%;
+                          height: 2px;
+                          background: #000;
+                        }
+                        
+                        .counter {
+                          color: #777;
+                          font-weight: normal;
+                          margin-left: 5px;
+                        }
+                        
+                        .tab-content {
+                          display: none;
+                        }
+                        
+                        .tab-content.active {
+                          display: block;
+                        }
+                        
+                        .specs-block {
+                          margin-bottom: 30px;
+                        }
+                        
+                        .specs-title {
+                          font-size: 18px;
+                          font-weight: bold;
+                          margin: 0 0 15px 0;
+                          padding-bottom: 5px;
+                          border-bottom: 1px solid #eee;
+                        }
+                        
+                        .specs-table {
+                          display: grid;
+                          grid-template-columns: 1fr 1fr;
+                          gap: 10px;
+                        }
+                        
+                        .specs-row {
+                          display: contents;
+                        }
+                        
+                        .specs-name {
+                          padding: 8px 10px;
+                          color: #666;
+                        }
+                        
+                        .specs-value {
+                          padding: 8px 10px;
+                          color: #333;
+                        }
+                        
+                        .specs-row:nth-child(odd) .specs-name,
+                        .specs-row:nth-child(odd) .specs-value {
+                          background-color: #f9f9f9;
+                        }
+                      </style>
+                      
+                      <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                          const tabs = document.querySelectorAll('.tab-btn');
+                          
+                          tabs.forEach(tab => {
+                            tab.addEventListener('click', function() {
+                              // Удаляем активный класс у всех кнопок
+                              tabs.forEach(t => t.classList.remove('active'));
+                              
+                              // Добавляем активный класс текущей кнопке
+                              this.classList.add('active');
+                              
+                              // Скрываем все содержимое вкладок
+                              document.querySelectorAll('.tab-content').forEach(content => {
+                                content.classList.remove('active');
+                              });
+                              
+                              // Показываем выбранное содержимое
+                              const tabId = this.textContent.trim().split(' ')[0].toLowerCase();
+                              if (tabId === 'отзывы') {
+                                document.getElementById('reviews').classList.add('active');
+                              } else if (tabId === 'вопросы') {
+                                document.getElementById('questions').classList.add('active');
+                              } else {
+                                document.getElementById('specifications').classList.add('active');
+                              }
+                            });
+                          });
+                        });
+                      </script>
                 </div>
                 <div class="common__block3">
 
