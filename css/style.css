@@ -51,13 +51,13 @@ main {
     position: relative;
     background-color: rgb(255, 255, 255);
 
-    @media (max-width:1300px) {
+    /* @media (max-width:1300px) {
         width: 1014px;
     }
 
     @media (max-width:1045px) {
         width: 711px;
-    }
+    } */
 }
 
 
